@@ -1,0 +1,3 @@
+{ "expo": { "name": "PocketWise", "slug": "pocketwise", "version": "0.1.0",
+  "orientation": "portrait", "userInterfaceStyle": "dark", "backgroundColor": "#070B14",
+  "android": { "package": "com.pocketwise.app" } } }

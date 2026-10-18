@@ -1,0 +1,27 @@
+{
+  "name": "pocketwise",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^7.0.0",
+    "@react-navigation/native": "^7.0.0",
+    "@react-navigation/native-stack": "^7.0.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "@react-native-async-storage/async-storage": "*",
+    "expo": "~54.0.0",
+    "expo-linear-gradient": "*",
+    "expo-status-bar": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-safe-area-context": "*",
+    "react-native-screens": "*",
+    "react-native-url-polyfill": "^2.0.0"
+  },
+  "devDependencies": { "@types/react": "*", "typescript": "~5.9.0" }
+}
