@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b2d"><meta name="description" content="PocketWise — Track. Split. Plan. Spend Smarter.">
+<title>PocketWise — Spend smarter</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="authScreen" class="auth-screen">
+  <div class="auth-card">
+    <div class="brand-mark">P<span>W</span></div><div class="eyebrow">YOUR MONEY, WITH A PLAN</div>
+    <h1 id="authTitle">Welcome to PocketWise</h1><p class="muted" id="authSubtitle">Sign in to take control of your spending.</p>
+    <form id="authForm">
+      <label>Full name <input id="authName" autocomplete="name" placeholder="Your name" /></label>
+      <label>Email <input id="authEmail" type="email" autocomplete="email" placeholder="you@example.com" required /></label>
+      <label>Password <input id="authPassword" type="password" autocomplete="current-password" placeholder="At least 6 characters" minlength="6" required /></label>
+      <button class="btn primary full" id="authSubmit">Sign in</button>
+    </form>
+    <p class="auth-switch"><span id="authSwitchText">New to PocketWise?</span> <button class="text-button" id="authSwitch">Create account</button></p>
+    <p class="tiny muted">This version stores data in this browser only. It is not connected to a secure cloud account.</p>
+  </div>
+</div>
+<div id="app" class="app hidden">
+  <aside class="sidebar">
+    <a class="brand" href="#"><span class="brand-mark small">P<span>W</span></span><span>PocketWise<small>Track. Split. Plan.</small></span></a>
+    <div class="side-label">WORKSPACE</div>
+    <nav id="nav">
+      <button class="nav-item active" data-page="overview"><span>◫</span> Overview</button>
+      <button class="nav-item" data-page="transactions"><span>↕</span> Transactions</button>
+      <button class="nav-item" data-page="budgets"><span>◷</span> Budgets</button>
+      <button class="nav-item" data-page="groups"><span>◎</span> Group Split</button>
+      <button class="nav-item" data-page="insights"><span>⌁</span> Insights</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="mini-card"><div class="mini-icon">✦</div><b>Small steps add up.</b><p>Know where your money goes, then choose where it should go.</p></div><button class="nav-item" id="signOut"><span>↪</span> Sign out</button></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><div class="eyebrow" id="dateLabel">YOUR FINANCIAL SPACE</div><h2 id="pageTitle">Overview</h2></div><div class="top-actions"><div class="avatar" id="avatar">P</div><div><b id="userName">Purav</b><small id="userEmail">Personal account</small></div><button class="icon-btn mobile-menu" id="menuBtn" aria-label="Menu">☰</button></div></header>
+    <div id="pageContent"></div>
+    <footer>PocketWise <span>•</span> Spend with intention.</footer>
+  </main>
+</div>
+<div id="modalRoot"></div>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
