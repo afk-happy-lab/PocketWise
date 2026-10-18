@@ -14,6 +14,6 @@ Status: Phase 1 (login/signup, navigation, database schema, group maths). Other 
 6. Install "Expo Go" on your Android phone and scan the QR code (phone and PC on the same Wi-Fi)
 
 ## Test the money logic
-npm test
+
 
 Never commit `.env` (already in .gitignore).
